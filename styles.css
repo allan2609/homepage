@@ -49,9 +49,14 @@ header {
   padding: 1.5rem;
 }
 
+footer {
+  width: 100%;
+  background-color: lightseagreen;
+  padding: 1.5rem;
+}
+
 h1 {
   font-size: 22px;
-  font-weight: bold;
 }
 
 .container {
@@ -80,4 +85,25 @@ h1 {
   padding: 1rem;
   background-color: white;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.project {
+  height: 12rem;
+  width: 10rem;
+  border: 1px solid black;
+}
+
+.projects-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  justify-items: center;
 }
