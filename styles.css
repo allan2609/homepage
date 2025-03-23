@@ -30,3 +30,54 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+
+header > picture > img {
+  display: block;
+  height: 12rem;
+}
+
+header > picture {
+  display: inline-block;
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: -webkit-linear-gradient(290deg,lightseagreen 50%, white 50%);
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: min(64rem, 100%);
+  align-items: center;
+}
+
+.name {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about {
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
