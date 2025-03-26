@@ -31,6 +31,10 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header > picture > img {
   display: block;
   height: 12rem;
@@ -45,7 +49,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  background-image: -webkit-linear-gradient(290deg,lightseagreen 50%, white 50%);
+  background-image: linear-gradient(to bottom right, lightseagreen 50%, white 50%);
   padding: 1.5rem;
 }
 
@@ -57,6 +61,22 @@ footer {
 
 h1 {
   font-size: 22px;
+}
+
+svg {
+  height: 16px;
+}
+
+footer > div > svg {
+  fill: white;
+}
+
+footer > * {
+  color: white;
+}
+
+.icons {
+  color: black;
 }
 
 .container {
@@ -84,7 +104,7 @@ h1 {
 .about {
   padding: 1rem;
   background-color: white;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .main {
@@ -98,7 +118,7 @@ h1 {
 .project {
   height: 12rem;
   width: 10rem;
-  border: 1px solid black;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .projects-area {
@@ -106,4 +126,36 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1rem;
   justify-items: center;
+}
+
+.screenshot {
+  height: 60%;
+  color: white;
+  font-size: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.\31 {
+  background-color: maroon;
+}
+
+.\32 {
+  background-color: purple;
+}
+
+.\33 {
+  background-color: darkgreen;
+}
+
+.\34 {
+  background-color: violet;
+}
+
+.\35 {
+  background-color: orange;
+}
+
+.\36 {
+  background-color: lightskyblue;
 }
