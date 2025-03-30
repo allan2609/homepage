@@ -35,13 +35,17 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
 }
 
 header > picture > img {
   display: block;
-  height: 12rem;
+  height: 16rem;
 }
 
 header > picture {
@@ -62,7 +66,6 @@ footer {
   width: 100%;
   background-color: lightseagreen;
   padding: 1.5rem;
-  gap: 1rem;
 }
 
 h1 {
@@ -82,12 +85,8 @@ footer > * {
   color: white;
 }
 
-.footer-content > h1 {
-  margin-bottom: 0.5rem;
-}
-
 .footer-text {
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-size: 14px;
 }
 
@@ -100,14 +99,18 @@ footer > * {
 li {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .footer-content > .icons {
   display: flex;
-  margin: 1rem 0;
+  margin: 2rem 0;
   gap: 0.75rem;
+}
+
+.footer-content {
+  padding-right: 1.5rem;
 }
 
 .footer-image {
@@ -249,4 +252,23 @@ li {
 
 .\36 {
   background-color: lightskyblue;
+}
+
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-content {
+    padding: 1.5rem 1rem;
+  }
+  .footer-image {
+    width: 100%;
+  }
+  .footer-image > picture > img {
+    width: 100vw;
+  }
+  .footer-content > .icons {
+    justify-content: center;
+  }
 }
