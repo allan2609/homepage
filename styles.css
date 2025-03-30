@@ -58,9 +58,11 @@ header {
 }
 
 footer {
+  display: flex;
   width: 100%;
   background-color: lightseagreen;
   padding: 1.5rem;
+  gap: 1rem;
 }
 
 h1 {
@@ -72,12 +74,49 @@ svg {
   height: 16px;
 }
 
-footer > div > svg {
+.footer-content > div > svg {
   fill: white;
 }
 
 footer > * {
   color: white;
+}
+
+.footer-content > h1 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.footer-content > ul {
+  font-size: 14px;
+  color: white;
+  fill: white;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.footer-content > .icons {
+  display: flex;
+  margin: 1rem 0;
+  gap: 0.75rem;
+}
+
+.footer-image {
+  max-width: 50%;
+}
+
+.footer-image > picture > img {
+  width: 100%;
+  display: block;
 }
 
 .icons {
