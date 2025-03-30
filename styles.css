@@ -126,20 +126,40 @@ footer > * {
 }
 
 .project {
-  height: 12rem;
-  width: 10rem;
+  height: 15rem;
+  width: 12rem;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .projects-area {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: 1rem;
   justify-items: center;
 }
 
 .project-name, .screenshot, .name {
   font-family: "Playfair Display", serif;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.project-name {
+  font-size: 14px;
+}
+
+.project-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-info {
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 .project-description {
@@ -153,6 +173,7 @@ footer > * {
   font-size: 20px;
   align-content: center;
   text-align: center;
+  padding: 1.25rem;
 }
 
 .\31 {
