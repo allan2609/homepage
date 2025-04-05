@@ -173,10 +173,15 @@ li {
   align-items: center;
 }
 
-.name {
+.name, .mobile-name {
   color: white;
   font-size: 24px;
+  font-family: "Playfair Display", serif;
   text-shadow: 1px 2px 4px black;
+}
+
+.mobile-name {
+  display: none;
 }
 
 .about {
@@ -201,7 +206,7 @@ li {
   color: #454545;
   line-height: 1.75;
   text-align: left;
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 0;
 }
 
 .main {
@@ -209,12 +214,13 @@ li {
   flex-direction: column;
   width: min(64rem, 100%);
   padding: 3rem;
+  margin-bottom: 3rem;
   gap: 1rem;
 }
 
 .project {
   height: 17rem;
-  width: 100%;
+  width: min(14rem, 100%);
   margin: 0 auto;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
@@ -256,7 +262,7 @@ li {
 }
 
 .screenshot {
-  height: 60%;
+  height: 50%;
   color: white;
   font-size: 20px;
   align-content: center;
@@ -345,14 +351,24 @@ li {
     position: relative;
   }
 
+  .header-content > picture {
+    margin-bottom: -2.1rem;
+  }
+
   .name {
-    position: absolute;
-    top: 20rem;
-    z-index: 1;
+    display: none;
+  }
+
+  .mobile-name {
+    display: block;
+    position: relative;
+    bottom: 2.5rem;
+    text-align: center;
   }
 
   .about {
-    margin: 0;
+    margin: 3rem 0;
+    padding: 0;
     box-shadow: none;
   }
 
@@ -371,6 +387,7 @@ li {
 
   .main {
     align-items: center;
+    padding: 1rem;
   }
 
   footer {
@@ -395,6 +412,10 @@ li {
 
   .footer-info > .icons {
     justify-content: center;
+  }
+
+  .footer-info > h1 {
+    text-align: center;
   }
 }
 
