@@ -176,7 +176,6 @@ li {
 .name {
   color: white;
   font-size: 24px;
-  font-weight: bold;
   text-shadow: 1px 2px 4px black;
 }
 
@@ -307,9 +306,13 @@ li {
 
   .name {
     position: absolute;
-    bottom: 5rem;
-    left: 4rem;
+    bottom: 20%;
+    left: 12%;
     z-index: 1;
+  }
+
+  .footer-content {
+    padding: 3rem 3rem 1rem 3rem
   }
 }
 
@@ -398,16 +401,15 @@ li {
 @media (min-width: 400px) and (max-width: 799px) {
   .about {
     margin: 4rem 2rem 0 6rem;
-    max-width: 75%;
+    max-width: 80%;
   }
 
   .name {
     position: absolute;
     width: 100%;
     text-align: right;
-    top: 3rem;
-    right: 2.5rem;
-    padding: 0 4rem;
+    top: 2.75rem;
+    right: 15%;
     z-index: 2;
   }
 
