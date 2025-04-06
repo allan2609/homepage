@@ -88,6 +88,7 @@ header::before {
 .header-content > picture > img {
   width: 100%;
   display: block;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -295,11 +296,11 @@ li {
   background-color: lightskyblue;
 }
 
-@media (min-width: 799px) {
+@media (min-width: 800px) {
   .header-content {
     flex-direction: row;
     text-align: left;
-    padding: 3rem;
+    padding: 2rem 3rem;
     position: relative;
   }
 
@@ -324,13 +325,13 @@ li {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   .projects-area {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 399px) {
   header::before {
     display: none;
   }
@@ -421,7 +422,7 @@ li {
   }
 }
 
-@media (min-width: 400px) and (max-width: 799px) {
+@media (min-width: 400px) and (max-width: 800px) {
   .about {
     margin: 4rem 2rem 0 6rem;
     max-width: 80%;
