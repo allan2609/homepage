@@ -137,6 +137,7 @@ li {
   align-items: center;
   gap: 12px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .footer-info > .icons {
