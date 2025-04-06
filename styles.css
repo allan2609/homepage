@@ -333,6 +333,10 @@ li {
 }
 
 @media (max-width: 399px) {
+  li > svg {
+    display: none;
+  }
+  
   header::before {
     display: none;
   }
